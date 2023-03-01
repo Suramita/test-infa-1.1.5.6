@@ -1,0 +1,36 @@
+clusterDomain: cluster.local
+logRetentionBytes: {{ kafka_prop.log_retention_bytes }}
+defaultReplicationFactor: {{ kafka_prop.default_replication_factor }}
+offsetsTopicReplicationFactor: {{ kafka_prop.offsets_topic_replication_factor }}
+transactionStateLogReplicationFactor: {{ kafka_prop.transaction_state_log_replication_factor }}
+numPartitions: {{ kafka_prop.num_partitions }}
+replicaCount: {{ kafka_prop.replica_count }}
+sidecars: {}
+autoCreateTopicsEnable: true
+# CAUTION: In production, disable below option.
+# To delete topics in kafka, enable the below options
+# deleteTopicEnable: true
+
+persistence:
+  enabled: true
+  storageClass: {{nfs.provisioner}}
+  accessModes:
+    - ReadWriteOnce
+  size: {{ kafka_prop.size }}
+
+zookeeper:
+  replicaCount: {{ kafka_prop.zookeeper_replica_count }}
+  persistence:
+    enabled: true
+    storageClass: {{nfs.provisioner}}
+    size: {{ kafka_prop.zookeeper_size }}
+   
+livenessProbe:
+  enabled: true
+  initialDelaySeconds: 120
+  timeoutSeconds: 5
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 120
+  failureThreshold: 6
+  timeoutSeconds: 5

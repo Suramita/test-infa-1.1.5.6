@@ -1,0 +1,19 @@
+{
+    "id": "",
+    "username": "deviceprovider1",
+    "email": "deviceprovider1@xyz.com",
+    "enabled": true,
+    "emailVerified": false,
+    "firstName": "Device",
+    "lastName": "Provider One",
+    "credentials": [
+        {
+            "type": "password",
+            "value": "mosip",
+            "temporary": false
+        }
+    ],
+    "attributes": {
+    }
+}
+

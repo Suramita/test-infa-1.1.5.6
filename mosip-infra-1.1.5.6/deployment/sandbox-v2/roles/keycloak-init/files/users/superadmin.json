@@ -1,0 +1,19 @@
+{
+    "id": "",
+    "username": "superadmin",
+    "email": "superadmin@xyz.com",
+    "enabled": true,
+    "emailVerified": false,
+    "firstName": "Super",
+    "lastName": "Admin",
+    "credentials": [
+        {
+            "type": "password",
+            "value": "mosip",
+            "temporary": false
+        }
+    ],
+    "attributes": {
+    }
+}
+

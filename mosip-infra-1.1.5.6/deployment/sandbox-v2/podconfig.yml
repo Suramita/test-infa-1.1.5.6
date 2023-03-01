@@ -1,0 +1,971 @@
+podconfig:
+  kernel:
+    auth:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms1000M -Xmx1000M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    masterdata:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms1000M -Xmx1000M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    idgen:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    prid:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    sync:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms1000M -Xmx1000M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    audit :
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    key:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    notifier:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    otp:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    rid:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  regproc:
+    camel:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    notification:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    uploader:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    quality:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    validator:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    osi:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    demo:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    bio:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    bioauth:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    abishandler:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    abismid:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    manual:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    external:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    eis:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    uin:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    msg:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    print:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    trans:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    reprocess:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  dmzregproc:
+    receiver:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 1
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    camel:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 1
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    status:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 1
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    pktserver:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 1
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  prereg:
+    application:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    batch:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    booking:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 1
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    datasync:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    ui:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  ida:
+    auth:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    internal:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    kyc:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    otp:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  idrepo:
+    identity:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms1000M -Xmx1000M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    vid:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms1000M -Xmx1000M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    credentialreq:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms1000M -Xmx1000M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    credentialservice:
+      replicas: 1
+      minReadySeconds: 10
+      maxUnavailable: 0
+      maxSurge: 1
+      java_opts: "-Xms1000M -Xmx1000M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  pms:
+    partner:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    policy:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 500m
+          #memory: 1Gi
+        #limits:
+          #cpu: 500m
+          #memory: 1Gi
+
+  packetmanager:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  resident:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  activemq:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1Gi
+
+  admin:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  artifactory:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  clamav:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  config_server:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  datashare:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  docker_service:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+
+  keycloak:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1Gi
+
+  mockabis:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 700Mi
+        #limits:
+          #cpu: 300m
+          #memory: 700Mi
+
+  biosdk:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 700Mi
+        #limits:
+          #cpu: 300m
+          #memory: 700Mi
+
+  mockmv:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      #resources:
+        #requests:
+          #cpu: 200m
+          #memory: 500Mi
+        #limits:
+          #cpu: 200m
+          #memory: 500Mi
+
+  postgres:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  print:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  reg_client_downloader:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms750M -Xmx750M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+  websub:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi
+
+    consolidator:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+
+  resident_app_server:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      resources:
+        requests:
+          cpu: 200m
+          memory: 1.5Gi
+        limits:
+          cpu: 300m
+          memory: 1.5Gi
+
+  mosip_file_server:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      resources:
+        requests:
+          cpu: 200m
+          memory: 1.5Gi
+        limits:
+          cpu: 300m
+          memory: 1.5Gi
+
+  ingress:
+    nginx:
+      replicas: 1
+
+  digitalcard:
+    service:
+      replicas: 1
+      maxSurge: 1
+      maxUnavailable: 0
+      minReadySeconds: 10
+      java_opts: "-Xms500M -Xmx500M"
+      #resources:
+        #requests:
+          #cpu: 300m
+          #memory: 1.5Gi
+        #limits:
+          #cpu: 300m
+          #memory: 1.5Gi

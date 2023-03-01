@@ -1,0 +1,19 @@
+{
+    "id": "",
+    "username": "partner1",
+    "email": "partner1@xyz.com",
+    "enabled": true,
+    "emailVerified": false,
+    "firstName": "Partner",
+    "lastName": "One",
+    "credentials": [
+        {
+            "type": "password",
+            "value": "mosip",
+            "temporary": false
+        }
+    ],
+    "attributes": {
+    }
+}
+

@@ -1,0 +1,19 @@
+{
+    "id": "",
+    "username": "policymanager1",
+    "email": "policymanager1@xyz.com",
+    "enabled": true,
+    "emailVerified": false,
+    "firstName": "Policy",
+    "lastName": "Manager One",
+    "credentials": [
+        {
+            "type": "password",
+            "value": "mosip",
+            "temporary": false
+        }
+    ],
+    "attributes": {
+    }
+}
+

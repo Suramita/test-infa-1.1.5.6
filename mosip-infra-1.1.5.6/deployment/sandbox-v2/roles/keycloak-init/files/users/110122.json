@@ -1,0 +1,18 @@
+{
+    "username": "110122",
+    "enabled": true,
+    "email": "110122@xyz.com",
+    "emailVerified": false,
+    "firstName": "Niyati",
+    "lastName": "Test",
+    "credentials": [
+        {
+            "type": "password",
+            "value": "Techno@123",
+            "temporary": false
+        }
+    ],
+    "attributes": {
+    }
+}
+

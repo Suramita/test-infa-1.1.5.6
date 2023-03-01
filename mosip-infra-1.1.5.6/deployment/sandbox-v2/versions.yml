@@ -1,0 +1,180 @@
+# Manifest file containing version of all MOSIP core components.
+versions:
+  services:
+
+    kernel:
+      auth:
+        'kernel-auth-service':  'mosipid/kernel-auth-service:1.1.5.5'
+      masterdata:
+        'kernel-masterdata-service': 'mosipid/kernel-masterdata-service:1.1.5.3'
+      idgen:
+        'kernel-idgenerator-service': 'mosipid/kernel-idgenerator-service:1.1.5.5'
+      prid:
+        'kernel-pridgenerator-service': 'mosipid/kernel-pridgenerator-service:1.1.5.5'
+      sync:
+        'kernel-syncdata-service': 'mosipid/kernel-syncdata-service:1.1.5.2'
+      audit :
+        'kernel-auditmanager-service': 'mosipid/kernel-auditmanager-service:1.1.5.6'
+      key:
+        'kernel-keymanager-service': 'mosipid/kernel-keymanager-service:1.1.5.5'
+      notifier:
+        'kernel-notification-service': 'mosipid/kernel-notification-service:1.1.5.3'
+      otp:
+        'kernel-otpmanager-service': 'mosipid/kernel-otpmanager-service:1.1.5.3'
+      rid:
+        'kernel-ridgenerator-service': 'mosipid/kernel-ridgenerator-service:1.1.5.3'
+      keygen:
+        'kernel-keys-generator': 'mosipid/keys-generator:1.1.5.3'
+
+    prereg:
+      application:
+        'prereg-application-service': 'mosipid/pre-registration-application-service:1.1.5.3'
+      batch:
+        'prereg-batchjob-service': 'mosipid/pre-registration-batchjob:1.1.5.2'
+      booking:
+        'prereg-booking-service': 'mosipid/pre-registration-booking-service:1.1.5.5'
+      datasync:
+        'prereg-datasync-service': 'mosipid/pre-registration-datasync-service:1.1.5.2'
+      captcha:
+        'prereg-captcha-service': 'mosipid/pre-registration-captcha-service:1.1.5.3'
+      ui:
+        'prereg-ui': 'mosipid/pre-registration-ui:1.1.5.3'
+
+    registration_client:
+      downloader:
+        'reg-client-downloader': 'mosipid/registration-client:1.1.5.5'
+      version: 1.1.5.5
+
+    regproc:
+      camel:
+        'regproc-camel-stage': 'mosipid/registration-processor-common-camel-bridge:1.1.5.6'
+      notification:
+        'regproc-securezone-notification-stage': 'mosipid/registration-processor-securezone-notification-stage:1.1.5.6'
+      uploader:
+        'regproc-packet-uploader-stage': 'mosipid/registration-processor-packet-uploader-stage:1.1.5.6'
+      quality:
+        'regproc-quality-checker-stage': 'mosipid/registration-processor-quality-checker-stage:1.1.5.6'
+      validator:
+        'regproc-packet-validator-stage': 'mosipid/registration-processor-packet-validator-stage:1.1.5.6'
+      osi:
+        'regproc-osi-validator-stage': 'mosipid/registration-processor-osi-validator-stage:1.1.5.6'
+      demo:
+        'regproc-demo-dedupe-stage': 'mosipid/registration-processor-demo-dedupe-stage:1.1.5.6'
+      bio:
+        'regproc-bio-dedupe-stage': 'mosipid/registration-processor-bio-dedupe-stage:1.1.5.6'
+      bioauth:
+        'regproc-biometric-authentication-stage': 'mosipid/registration-processor-biometric-authentication-stage:1.1.5.6'
+      abishandler:
+        'regproc-abis-handler-stage': 'mosipid/registration-processor-abis-handler-stage:1.1.5.6'
+      abismid:
+        'regproc-abis-middleware-stage': 'mosipid/registration-processor-abis-middleware-stage:1.1.5.6'
+      manual:
+        'regproc-manual-verification-stage': 'mosipid/registration-processor-manual-verification-stage:1.1.5.6'
+      external:
+        'regproc-external-stage': 'mosipid/registration-processor-external-stage:1.1.5.6'
+      eis:
+        'regproc-external-integration-service': 'mosipid/registration-processor-external-integration-service:1.1.5.6'
+      uin:
+        'regproc-uin-generator-stage': 'mosipid/registration-processor-uin-generator-stage:1.1.5.6'
+      msg:
+        'regproc-message-sender-stage': 'mosipid/registration-processor-message-sender-stage:1.1.5.6'
+      print:
+        'regproc-printing-stage': 'mosipid/registration-processor-printing-stage:1.1.5.6'
+      trans:
+        'regproc-registration-transaction-service': 'mosipid/registration-processor-registration-transaction-service:1.1.5.6'
+      reprocess:
+        'regproc-reprocessor-stage': 'mosipid/registration-processor-reprocessor-stage:1.1.5.6'
+
+    dmzregproc:
+      receiver:
+        'regproc-packet-receiver-stage': 'mosipid/registration-processor-packet-receiver-stage:1.1.5.6'
+      camel:
+        'regproc-camel-stage': 'mosipid/registration-processor-common-camel-bridge:1.1.5.6'
+      status:
+        'regproc-registration-status-service': 'mosipid/registration-processor-registration-status-service:1.1.5.6'
+      pktserver:
+        'regproc-dmz-packet-server': 'mosipid/registration-processor-dmz-packet-server:1.1.5.6'
+
+    ida:
+      auth:
+        'ida-auth-service': 'mosipid/authentication-service:1.1.5.5'
+      internal:
+        'ida-internal-service': 'mosipid/authentication-internal-service:1.1.5.5'
+      kyc:
+        'ida-kyc-service': 'mosipid/authentication-kyc-service:1.1.5.5'
+      otp:
+        'ida-otp-service': 'mosipid/authentication-otp-service:1.1.5.5'
+      keygen:
+        'ida-key-generator': 'mosipid/keys-generator:1.1.5'
+
+    idrepo:
+      identity:
+        'idrepo-identity-service': 'mosipint/id-repository-identity-service:1.1.5.6'
+      vid:
+        'idrepo-vid-service': 'mosipint/id-repository-vid-service:1.1.5.6'
+      credentialreq:
+        'idrepo-credential-request-generator': 'mosipint/credential-request-generator:1.1.5.6'
+      credentialservice:
+        'idrepo-credential-service': 'mosipint/credential-service:1.1.5.6'
+      salt:
+        'idrepo-salt-generator': 'mosipint/id-repository-salt-generator:1.1.5.6'
+
+    pms:
+      partner:
+        'pms-partner-manager-service': 'mosipint/partner-management-service:1.1.5.5'
+      policy:
+        'pms-policy-manager-service': 'mosipint/policy-management-service:1.1.5.5'
+      ui:
+        'pms-ui': 'mosipint/pmp-ui:develop'
+
+    resident:
+      resident:
+        'resident-service': 'mosipint/resident-service:1.1.5.4'
+
+    admin:
+      service:
+        'admin-service': 'mosipint/admin-service:1.1.5.4'
+      ui:
+        'admin-ui': 'mosipint/admin-ui:1.1.5.1'
+
+    packetmanager:
+      service:
+        'packetmanager-service': 'mosipid/commons-packet-service:1.1.5.5'
+
+    datashare:
+      service:
+        'datashare-service': 'mosipid/data-share-service:1.1.5.3'
+
+    print:
+      service:
+        'print-service': 'mosipid/print:1.1.5.3'
+
+    websub:
+      service:
+        'websub-service': 'mosipid/websub-service:1.1.5.3'
+      consolidator:
+        'consolidator-websub-service': 'mosipid/consolidator-websub-service:1.1.5.3'
+
+    mock:
+      abis:
+        'mock-abis': 'mosipid/mock-abis:develop'
+      mv:
+        'mock-mv': 'mosipid/mock-mv:1.1.5'
+      biosdk:
+        'mock-biosdk-service': 'mosipid/biosdk-server:1.1.5.5'
+
+    artifactory:
+      service:
+        'artifactory-service': 'mosipint/artifactory-server:1.1.5.6'
+
+    mosip_file_server:
+      service:
+        'mosip_file_server': 'mosipdev/mosip-file-server:1.1.5.1'
+
+    resident_app_server:
+      service:
+        'resident-app-server': 'mosipid/mimoto:1.1.5'
+
+    digitalcard:
+      service:
+        'digitalcard-service': 'mosipint/digital-card-service:1.1.5.6'
